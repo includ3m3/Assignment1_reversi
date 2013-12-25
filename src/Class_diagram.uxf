@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>260</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>Assignment1GUI
+--
+-picture : ImageIcon
+-frame : JFrame
+-player1 : JTextField
+-player2 : JTextField
+-topPanel : JPanel
+-CenterPanel : JPanel
+-topPanel_sub1 : JPanel
+-playerName1 : JLabel
+-playerName2 : JLabel
+-Score1 : JLabel
+-Score2 : JLabel
+-ScoreLabel1 : JLabel
+-ScoreLabel2 : JLabel
+-info : JLabel
+-b : Assignment
+-slotsPanel : JPanel
+-panelBoard : JPanel[][]
+-wCount : int
+-bCount : int
+--
++Assignment1GUI()
+-CreateDisplay() : JPanel
++updateStatus() : void
++setPicture(Seed,int,int) : void
+-createImageIcon(String) : ImageIcon
++update() : void
++start() : void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>740</x>
+      <y>30</y>
+      <w>240</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Assignment
+--
+-gameBoard : Seed[][]
+-player1 : Seed
+-player2 : Seed
+-currentPlayer : Seed
+--
++Assignment()
+-NewGame() : void
++placeDisk(int, int) : void
++getBoard() : Seed[][]
++nextTurn() : void
++getCurrentPlayer() : Seed
++doFlip(int, int, boolean) : boolean
++chkWinner() : int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>380</x>
+      <y>10</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Seed
+--
++BLACK 
++WHITE
++EMPTY,
++ORIGIN_CELL_OCCUPIED
++NO_NEARBY_FRIENDLY_PIECE
++MOVE_NOT_2_SPACE_AWAY
++NOT_CURRENT_PLAYER_TURN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>70</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;40;140;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>610</x>
+      <y>60</y>
+      <w>150</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130;80;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>200</y>
+      <w>520</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;500;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>370</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>assignmentGUIMain
+--
+_+main(String[]) : void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>370</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160;30;30;30</additional_attributes>
+  </element>
+</diagram>
